@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="border p-5 shadow">
+            <p class="text-center">Weather Forecast</p>
+        </h1>
+        
+        
+<h3>
+        <form id="weather-form">
+            <input
+            type="text"
+            placeholder="Search for a city"
+            autocomplete="off"
+            autofocus="on"
+            id="city-input"
+            />
+
+            <input type="submit" value="Search"/>
+<button type="button" id="current-button" >Current Location</button>
+
+        </form>
+</h3>
+<h1 id="city"></h1>
+<span class="container" id="temperature">
+    Current temp
+</span>
+<span class="container" id="city-selector">
+    Salt Lake City, Utah
+</span>
+<span id="description"></span>
+        
+                </br>
+
+            </div>
+        </div>
+        <div class="container">
+            <img src="images/sun.png" alt="sun covered by clouds" width="300" />
+        </div>
+        
+    </br>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    Tuesday
+                    <div class="row">
+                        <div class="col-4">
+                            69°
+                            <div class="row">
+                                <div class="col-4">
+                                    28%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    Wednesday
+                    <div class="row">
+                        <div class="col-4">
+                            69°
+                            <div class="row">
+                                <div class="col-4">
+                                    30%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    Thursday
+                    <div class="row">
+                        <div class="col-4">
+                            69°
+                            <div class="row">
+                                <div class="col-4">
+                                    40%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    Friday
+                    <div class="row">
+                        <div class="col-4">
+                            69°
+                            <div class="row">
+                                <div class="col-4">
+                                    20%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    Saturday
+                    <div class="row">
+                        <div class="col-4">
+                            69°
+                            <div class="row">
+                                <div class="col-4">
+                                    60%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
